@@ -1,35 +1,11 @@
 # MATH5472 Project
 
-**Here Vocabulary considered is of size 16 and is represented using a 4x4 image.**
-**Each pixel in the image represents a word in the vocabulary. The Brighter the pixel, the higher is its frequency in the document/topic. Here 8 topics were assumed as the ground truth with the word distribution as shown in the image below. Now Using these topics 500 documents of length 100 were generated. Examples of documents generated are shown below in the image. Now LDA was ran(over 500 iterations) on these generated documents, and topics were discoverd. Topics discovered at initial iteration and final iteration are shown in the screenshots below**
+Description of different files:
 
-**Theta Ground Truth values**
-![image](https://cloud.githubusercontent.com/assets/15040734/21571298/e5e304c8-cef3-11e6-9b65-ef9a306e0249.png)
+1)learn_GibbsLDA---the Gibbs sampler in which the sampling procedure are based on the derived conditional probability in the project report
 
-**Example Documents**
+2)gen_images.m---image synthesis for building the corpus
 
-![image](https://cloud.githubusercontent.com/assets/15040734/21571315/1a4b993c-cef4-11e6-8520-32bcc04a055e.png)
+3)dirrnd.m---draw samples from Dirichlet distribution
 
-**Initial Phi Iteration**
-
-![image](https://cloud.githubusercontent.com/assets/15040734/21571339/4fb7e40e-cef4-11e6-887c-8495f8aef2c1.png)
-
-**Final Phi Iteration**
-
-**After final Iteration, the Topics discovered were:**
-
-![image](https://cloud.githubusercontent.com/assets/15040734/21571338/4cda5546-cef4-11e6-8bb5-11dfffd4a19c.png)
-
-It contains the following functions:
-
-1)code LDA Matlab.m implements the function to learn LDA parameters using Gibbs sampling
-The equations of the conditional posterior is based on the technical note by Yi Wang,
-"Gibbs Sampling and Latent Diriclet Allocation: The Gritty Details ", 
-available from http://dbgroup.cs.tsinghua.edu.cn/wangyi/lda/index.html
-
-2)gen_images.m contains the codes to generate the graphical example as in the paper
-"Finding scientific topics" by T. L. Griffiths and M. Steyvers, 2004.
-
-3)dirrnd.m implements the sampling from a Dirichlet distribution.
-
-4)run_GibbsLDA.m is main code to call to run the demo.
+4)run_GibbsLDA.m---the main code for the illustration of the graphical example
