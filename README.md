@@ -2,10 +2,10 @@
 
 Description of different files:
 
-1)learn_GibbsLDA---the Gibbs sampler in which the sampling procedure are based on the derived conditional probability in the project report
+1)GibbsLDA_sampler---the Gibbs sampler in which the sampling procedure are based on the derived conditional probability in the project report
 
-2)gen_images.m---image synthesis for building the corpus
+2)image_synthesis.m---image synthesis for building the corpus
 
 3)dirrnd.m---draw samples from Dirichlet distribution
 
-4)run_GibbsLDA.m---the main code for the illustration of the graphical example
+4)GibbsLDA_main.m---the main code for the illustration of the graphical example
